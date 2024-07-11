@@ -1,0 +1,27 @@
+Descrição do trabalho 
+
+Problema de informatização: sistema de admissão para estudantes internacionais na Universidade da Maia.
+
+A universidade da Maia, é uma das universidades em Portugal que disponibiliza um maior número de vagas para os estudantes internacionais.
+O país que mais recebe essas vagas é Cabo Verde.
+A Universidade disponibiliza 10 vagas para quatro cursos, psicologia, tecnologia comunicação de multimédia, informática e artes multimédia.
+Todos os cursos possuem disciplinas obrigatórias para a candidatura.
+Psicologia (psicologia, filosofia), tecnologia comunicação de multimédia (Matemática, Física, química), informática (Matemática, Física, química) e artes multimédia (Matemática, Física, química).
+Todos os cursos têm 3 anos de duração.
+Para conseguirem as vagas, os alunos internacionais terão de passar para o processo de admissão, vão ter de inscrever online na página da universidade, e deverão fornecer as seguintes informações, o nome, contato, email, BI, número de passaporte, e país de origem.
+Para a validação da candidatura é obrigatório apresentar todos as informações acima colocados, histórico académico e comprovativo de inscrição no valor de 250 euros.
+As candidaturas serão avaliadas da seguinte forma, na primeira fase da admissão os alunos que apresentarem todos os documentos corretamente passarão para próxima fase que onde vai ser analisada os desempenhos académico de cada um, os alunos com as melhores notas nas disciplinas obrigatórias têm maior probabilidade de serem aceites na universidade.
+Os candidatos aceites são contactados por uma notificação online através do email.
+
+Modelação dos problemas 
+
+ENTIDADES:
+CURSO (disciplina, anodeduração, vagas, nomes)
+CANDIDATO (nome, contacto, bi, numerodopassaporte, paísdeorigem)
+ADMISSÃO (estudante, históricoacadémico, valor (250 euros), comprovativodeinscrição)
+DISCIPLINA (nome)
+
+ASSOCIAÇÕES
+Inscreve-se (CANDIDATO, CURSO) N:M  PT
+PassaPorUma (CANDIDATO, ADMISSÃO) 1:N  PP
+Possuem (CURSO, DISCIPLINAS) M:N  PT
