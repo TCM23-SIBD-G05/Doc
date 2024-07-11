@@ -2,7 +2,7 @@ SQL
 
 DDL
 
-```
+```sql
 USE `Candidatura`;
 
 DROP TABLE IF EXISTS `Curso`;
