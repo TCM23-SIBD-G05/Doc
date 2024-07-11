@@ -1,2 +1,14 @@
 Esquema conceptual
+
 Modelo E/A
+
+ENTIDADES:
+CURSO (disciplina, anodeduração, vagas, nomes)
+CANDIDATO (nome, contacto, bi, numerodopassaporte, paísdeorigem)
+ADMISSÃO (estudante, históricoacadémico, valor (250 euros), comprovativodeinscrição)
+DISCIPLINA (nome)
+
+ASSOCIAÇÕES
+Inscreve-se (CANDIDATO, CURSO) N:M  PT
+PassaPorUma (CANDIDATO, ADMISSÃO) 1:N  PP
+Possuem (CURSO, DISCIPLINAS) M:N  PT
