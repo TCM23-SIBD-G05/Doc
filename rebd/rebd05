@@ -30,5 +30,5 @@ CREATE TABLE IF NOT EXISTS `RequisitosDeAdmissão` (
   `valor` Decimal,
   `comprovativo` String ,
   `estudante` FK
- PRIMARY KEY ( ``)
+ PRIMARY KEY ( `comprovativo`)
 )
